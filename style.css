@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+}
+#umumi{
+    width: 600px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+    background-color: #fff;
+}
+
+#top{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to right, #2c3e50, #3498db);
+}
+
+#seki{
+    border-radius: 20px;
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 495;
+    background: linear-gradient(to right, #2c3e50, #3498db);
+}
+#xal{
+    text-align: center;
+    margin-top:30px;
+    font: 400 28px 'Permanent Marker', cursive;
+
+}
+#umumi p{
+    margin-top: 50px;
+    text-align: center;
+    font: 700 38px 'Permanent Marker', cursive;
+    color: red;
+}
+#umumi a{
+    text-decoration: none;
+    color: #3498db;
+}
+#umumi a:hover{
+    color: #2c3e50;
+}
+h1{
+    text-align: center;
+    font-size: 20px;
+    font: 300 20px 'Permanent Marker', cursive;
+}
