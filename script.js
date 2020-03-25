@@ -11,10 +11,6 @@ document.getElementById("xal").innerHTML = `Point:` + t;
 
 let interval = setInterval(ballMove, 40);
 document.onkeydown = Key;
-random_bg_color2();
-
-
-
 function Key(e){
     e = e || window.event;
 
@@ -46,26 +42,30 @@ function random_bg_color2() {
     let  y = Math.floor(Math.random() * 256);
     let z = Math.floor(Math.random() * 256);
     let bgColor2 = "rgb(" + x + "," + y + "," + z + ")";
-    document.body.style.background = bgColor2;
+    document.getElementById("umumi").style.borderColor= bgColor2;
 }
 
 function ballMove(){
     if(BallX < 0 || BallX >570){
         dx*= -1;
         random_bg_color() ;
+        random_bg_color2();
     }
     if(BallY < 0){
         dy*= -1;
         random_bg_color() ;
+        random_bg_color2();
     }
-    else if((BallY > 470) &&(BallX >= barX - 25) && (BallX <= barX + 125)) {
+    else if((BallY > 470) &&(BallX >= barX - 25) && (BallX <= barX + 100)) {
         t++;
         document.getElementById("xal").innerHTML = `Point:` + t;
         document.getElementById("user").style.display = "none";
+        dx += 1;
+        dy += 1;
         dy *= -1;
     }
     else if(BallY > 470){
-        document.body.style.backgroundColor = "red";
+        document.body.style.backgroundColor = "darkred";
         document.getElementById("umumi").innerHTML = `<p>` + "Game Over" + `<br />` + `<br />` + `Total Points =` + t + `<br />` + `<br />` + `<a href="index.htm">Try Game</a>` + `</p>`;
     }
     BallX += dx;

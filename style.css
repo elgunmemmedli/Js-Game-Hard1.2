@@ -5,6 +5,7 @@
 }
 body{
     display: flex;
+    background-color: #999990;
 }
 #umumi{
     width: 600px;
@@ -12,6 +13,7 @@ body{
     position: relative;
     margin: auto;
     background-color: #fff;
+    border: 3px solid black;
 }
 
 #top{
@@ -30,7 +32,7 @@ body{
     height: 20px;
     position: absolute;
     left: 0;
-    top: 495;
+    top: 493;
     background: linear-gradient(to right, #2c3e50, #3498db);
 }
 #xal{
